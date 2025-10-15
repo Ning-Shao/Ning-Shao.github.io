@@ -45,4 +45,5 @@ footer {
   font-size: 0.9rem;
   color: #777;
   text-align: center;
+  display: none !important; 
 }
