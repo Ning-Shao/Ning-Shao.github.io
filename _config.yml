@@ -1,3 +1,11 @@
 title: Ning Shao
 description: Welcome to Ning's personal website. 
 theme: jekyll-theme-cayman
+
+# Navigation Link
+navbar_links: 
+  Home: /
+  About: /about
+  Projects: /projects
+  Contact: /contact
+  
