@@ -3,9 +3,13 @@ layout: default
 title: Home
 ---
 
-# Hi, I'm Ning
-Welcome to my personal website!
+<nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/projects">Projects</a>
+  <a href="/contact">Contact</a>
+</nav>
 
-- [About Me](about)
-- [Projects](projects)
-- [Contact](contact)
+# Welcome
+
+Hi! I'm Ning Shao — a writer, designer, and researcher passionate about AI, UX, and creativity.
