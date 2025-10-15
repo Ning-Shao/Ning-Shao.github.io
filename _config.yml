@@ -9,3 +9,5 @@ navbar_links:
   Projects: /projects
   Contact: /contact
   
+include:
+  - assets/css/style.css
