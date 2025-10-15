@@ -1,0 +1,15 @@
+body {
+  background-color: #f8f5f0; /* 米白色 */
+  color: #333;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #52796f; /* 柔和绿色链接 */
+}
+
+header, footer {
+  background: #f0ece6;
+  padding: 10px;
+}
