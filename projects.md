@@ -12,3 +12,5 @@ Here are a few examples of my work:
 - UX Data Statistics Analysis
 - AI & Rhetoric Essay Series
 - Digital Art Portfolio
+
+[← Return to Home](/)
