@@ -10,4 +10,4 @@ title: Contact
 Email: ningshao199981@outlook.com  
 GitHub: [Ning-Shao](https://github.com/Ning-Shao)  
 
-[← Return to Home](/)
+[← Return to Home](/){: .return }
