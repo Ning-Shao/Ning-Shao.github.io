@@ -13,4 +13,4 @@ Here are a few examples of my work:
 - AI & Rhetoric Essay Series
 - Digital Art Portfolio
 
-[← Return to Home](/)
+[← Return to Home](/){: .return }
