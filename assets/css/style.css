@@ -1,15 +1,38 @@
+/* --- overall page look --- */
 body {
-  background-color: #f8f5f0; /* 米白色 */
-  color: #333;
+  background-color: #f8f5f0;  /* 柔和米白 */
+  color: #2f2f2f;
   font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-a {
-  color: #52796f; /* 柔和绿色链接 */
+/* --- headings --- */
+h1, h2, h3 {
+  color: #333;
+  margin-top: 1.5rem;
 }
 
-header, footer {
-  background: #f0ece6;
-  padding: 10px;
+/* --- navigation links --- */
+nav {
+  margin-bottom: 1.5rem;
+}
+nav a {
+  color: #52796f;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 15px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- footer --- */
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+  text-align: center;
 }
