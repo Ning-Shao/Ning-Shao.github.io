@@ -39,6 +39,23 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* --- return to home format --- */
+a.return {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 8px 16px;
+  border: 1px solid #52796f;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #52796f;
+  font-weight: 500;
+}
+
+a.return:hover {
+  background-color: #e3f2ef;
+}
+
+
 /* --- footer --- */
 footer {
   margin-top: 3rem;
