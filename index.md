@@ -13,3 +13,7 @@ title: Home
 # Welcome
 
 Hi! I'm Ning Shao — a writer, designer, and researcher passionate about AI, UX, and creativity.
+
+<footer>
+  © 2025 Ning Shao | Designed with love 
+</footer>
