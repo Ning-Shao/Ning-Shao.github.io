@@ -1,4 +1,14 @@
 /* --- overall page look --- */
+
+a[href="#content"] {
+  position: absolute;
+  left: -9999px;
+}
+a[href="#content"]:focus {
+  position: static;
+  left: auto;
+}
+
 body {
   background-color: #f8f5f0;  /* 柔和米白 */
   color: #2f2f2f;
