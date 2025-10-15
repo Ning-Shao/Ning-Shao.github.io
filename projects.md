@@ -9,8 +9,6 @@ title: Projects
 Here are some examples of my work — blending data, design, and philosophy.
 
 <div class="project-grid">
-  
-<div class="project-grid">
 
   <div class="project-card">
     <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="Delphi-style UX Survey Tool">
@@ -35,6 +33,5 @@ Here are some examples of my work — blending data, design, and philosophy.
 
 </div>
 
-</div>
 
 [← Return to Home](/){: .return }
