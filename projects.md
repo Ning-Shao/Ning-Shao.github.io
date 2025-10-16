@@ -26,9 +26,9 @@ Here are some examples of my work — blending data, design, and philosophy.
       <div class="dropdown-content">
         <a href="https://nbviewer.org/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">View Interactive Notebook</a>
         <a href="https://colab.research.google.com/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">Open in Google Colab</a>
+      </div>
     </div>
   </div>
-</div>
 
 
   <div class="project-card">
