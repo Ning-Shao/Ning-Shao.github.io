@@ -11,10 +11,17 @@ Here are some examples of my work — blending data, design, and philosophy.
 <div class="project-grid">
 
   <div class="project-card">
-    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="Delphi-style UX Survey Tool">
-    <h3>Delphi-style UX Survey Tool</h3>
+    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="UX Data Interactive Dashboard">
+    <h3>UX Data Interactive Dashboard</h3>
     <p>An interactive UX survey system using Python and Flask to collect multi-round user feedback.</p>
     <a href="https://github.com/Ning-Shao/Delphi-UX-Tool" target="_blank">View on GitHub</a>
+  </div>
+
+  <div class="project-card">
+    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="Google Play Store Data Analysis">
+    <h3>Google Play Store User Data Analysis</h3>
+    <p>Data cleaning, visualization, and insights from 10K+ Play Store apps, using Python (pandas, matplotlib, regex).</p>
+    <a href="https://nbviewer.org/github/Ning-Shao/GooglePlay-Analysis/blob/main/ux_data_analysis.ipynb" target="_blank"> View Interactive Notebook</a>
   </div>
 
   <div class="project-card">
