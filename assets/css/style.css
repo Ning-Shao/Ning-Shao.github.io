@@ -151,7 +151,7 @@ footer {
   filter: brightness(1.1);
 }
 
-/* 文字和链接微动 */
+/* mild motion */
 .project-card h3, .project-card p, .project-card a {
   transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -254,7 +254,27 @@ body {
   background-color: #f0ece4;
 }
 
-/* 展开菜单 */
+/* menu */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* --- Gentle white text style --- */
+.soft-intro {
+  background-color: #f8f5f0;  /* beige background */
+  color: #444;               /* drak grey font（mild contrast） */
+  font-size: 1.2rem;
+  line-height: 1.7;
+  font-family: "Helvetica Neue", "Georgia", serif;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 2rem auto;
+  transition: background-color 0.3s ease;
+}
+
+.soft-intro:hover {
+  background-color: #f2eee9; /* hover lighter */
 }
