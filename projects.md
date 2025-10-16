@@ -18,7 +18,7 @@ Here are some examples of my work — blending data, design, and philosophy.
   </div>
 
   <div class="project-card">
-    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="Google Play Store Data Analysis">
+    <img src="{{ '/assets/files/data_analysis.jpg' | relative_url }}" alt="Google Play Store Data Analysis">
     <h3>Google Play Store User Data Analysis</h3>
     <p>Data cleaning, visualization, and insights from 10K+ Play Store apps, using Python (pandas, matplotlib, regex).</p>
     <div class="dropdown">
