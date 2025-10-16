@@ -10,7 +10,7 @@ title: Home
   <a href="/contact">Contact</a>
 </nav>
 
-# Welcome
-
-Hi! I'm Ning Shao — a writer, designer, and researcher passionate about AI, UX, and creativity.
-
+# Welcome to Ning's personal website. 
+<div class="soft-intro">
+  Hi! I’m Ning Shao — a philosopher turned technologist. I explore the ethics of artificial intelligence and design technologies grounded in humanity.
+</div>
