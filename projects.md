@@ -21,7 +21,9 @@ Here are some examples of my work — blending data, design, and philosophy.
     <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="Google Play Store Data Analysis">
     <h3>Google Play Store User Data Analysis</h3>
     <p>Data cleaning, visualization, and insights from 10K+ Play Store apps, using Python (pandas, matplotlib, regex).</p>
-    <a href="https://nbviewer.org/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">View Interactive Notebook</a>
+    <a href="https://colab.research.google.com/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">Open in Google Colab</a>
+</a>
+
   </div>
 
   <div class="project-card">
