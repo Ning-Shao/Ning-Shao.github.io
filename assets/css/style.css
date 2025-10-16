@@ -207,3 +207,54 @@ body {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* --- dropdown button --- */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.dropbtn {
+  background-color: #f2efe9;  /* 柔和米白背景 */
+  color: #333;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.dropbtn:hover {
+  background-color: #e8e4dd;
+  transform: translateY(-1px);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fffdf8;
+  min-width: 220px;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  z-index: 1;
+  margin-top: 6px;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0ece4;
+}
+
+/* 展开菜单 */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
