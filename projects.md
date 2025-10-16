@@ -21,10 +21,15 @@ Here are some examples of my work — blending data, design, and philosophy.
     <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="Google Play Store Data Analysis">
     <h3>Google Play Store User Data Analysis</h3>
     <p>Data cleaning, visualization, and insights from 10K+ Play Store apps, using Python (pandas, matplotlib, regex).</p>
-    <a href="https://nbviewer.org/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">View Interactive Notebook</a>
-    <br>
-    <a href="https://colab.research.google.com/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">Open in Google Colab</a>
+    <div class="dropdown">
+      <button class="dropbtn">Open Notebook ▼</button>
+      <div class="dropdown-content">
+        <a href="https://nbviewer.org/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">View Interactive Notebook</a>
+        <a href="https://colab.research.google.com/github/Ning-Shao/Ning-Shao.github.io/blob/main/assets/files/ux_data_analysis.ipynb" target="_blank">Open in Google Colab</a>
+    </div>
   </div>
+</div>
+
 
   <div class="project-card">
     <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?w=600" alt="AI & Rhetoric Essay Series">
