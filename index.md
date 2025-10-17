@@ -13,11 +13,9 @@ title: Home
 # Welcome to Ning's personal website. 
 <div class="soft-intro">
   Hi! I’m Ning Shao — a philosopher turned technologist. I explore the ethics of artificial intelligence and design technologies grounded in humanity.
-</div>
-<div class="photo-gallery">
+  
+<div class="photo-banner">
   <img src="/assets/images/harbor_view.jpg" alt="California Harbor View">
-  <img src="/assets/images/bonfire.jpg" alt="Bonfire in the yard">
   <img src="/assets/images/leaves.jpg" alt="Green leaves">
-  <img src="/assets/images/through_the_window.jpg" alt="Views seen from a window">
-  <img src="/assets/images/skyline.jpg" alt="Skyine">
+  <img src="/assets/images/skyline.jpg" alt="Skyline at dusk">
 </div>
