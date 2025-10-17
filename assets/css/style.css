@@ -270,27 +270,30 @@ button:hover, .btn:hover {
   background-color: #68b68c;
 }
 
-/* --- Photo Gallery (Masonry Layout) --- */
-.photo-gallery {
-  column-count: 3;
-  column-gap: 1rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+/* --- Photo Gallery (Soft Horizontal Banner) --- */
+.photo-banner {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* 隐藏滚动条 (Firefox) */
 }
-
-.photo-gallery img {
-  width: 100%;
+.photo-banner::-webkit-scrollbar {
+  display: none; /* 隐藏滚动条 (Chrome / Safari) */
+}
+.photo-banner img {
+  height: 160px;
   border-radius: 12px;
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  break-inside: avoid;
+  filter: brightness(0.95) saturate(0.95);
+  transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-
-.photo-gallery img:hover {
+.photo-banner img:hover {
+  filter: brightness(1.05) saturate(1);
   transform: scale(1.03);
-  filter: brightness(1.08);
 }
+
 
 /* --- Responsive: smaller screen 2 columns --- */
 @media (max-width: 800px) {
