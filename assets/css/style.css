@@ -24,21 +24,26 @@ a[href="#content"]:focus {
 }
 
 body {
-  background-color: rgba(255, 255, 255, 0.78); /* 轻一点的透明度，背景更透 */
-  color: #1f382d; /* 更柔和的深绿文字 */
+  background: rgba(255, 255, 255, 0.68); /* 半透明奶白，衬托森林 */
+  color: #18392b; /* 深墨绿文字 */
   font-family: "Nunito Sans", "Avenir", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.05rem;
   line-height: 1.75;
   letter-spacing: 0.01em;
   max-width: 1000px;
   margin: 3rem auto;
-  padding: 2.5rem;
+  padding: 2.5rem 3rem;
+  
+  /*  玻璃模糊核心部分 */
   border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12); /* 稍加深阴影以配合亮背景 */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(14px) saturate(130%);
+  -webkit-backdrop-filter: blur(14px) saturate(130%);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  
+  /* 平滑过渡 */
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
+
 
 /* --- Headings --- */
 h1, h2, h3 {
