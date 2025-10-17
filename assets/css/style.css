@@ -24,7 +24,7 @@ a[href="#content"]:focus {
 }
 
 body {
-  background: rgba(255, 255, 255, 0.68); /* 半透明奶白，衬托森林 */
+  background: rgba(255, 255, 255, 0.72); 
   color: #18392b; /* 深墨绿文字 */
   font-family: "Nunito Sans", "Avenir", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.05rem;
@@ -40,7 +40,7 @@ body {
   -webkit-backdrop-filter: blur(14px) saturate(130%);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   
-  /* 平滑过渡 */
+  /* smooth transition */
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -92,7 +92,6 @@ footer {
   border-top: 1px solid #e0ddd7;
   padding-top: 1rem;
 }
-
 /* --- Project Grid --- */
 .project-grid {
   display: grid;
@@ -101,27 +100,39 @@ footer {
   margin-top: 2rem;
 }
 
+/* --- Project Card (玻璃拟态效果) --- */
 .project-card {
-  background: #fefcf9;
-  border: 1px solid #e8e5df;
-  border-radius: 12px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+  background: rgba(255, 255, 255, 0.55);  /* 半透明白玻璃 */
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   padding: 1.2rem;
   text-align: center;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  /* 模糊与动画 */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+
+  /* 初始淡入动画 */
   opacity: 0;
   animation: fadeInCard 1s ease forwards;
 }
 
+/* --- Hover 状态 --- */
+.project-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* --- 卡片加载延迟 (依次出现) --- */
 .project-card:nth-child(1) { animation-delay: 0.2s; }
 .project-card:nth-child(2) { animation-delay: 0.4s; }
 .project-card:nth-child(3) { animation-delay: 0.6s; }
+.project-card:nth-child(4) { animation-delay: 0.8s; } /* 可选：支持第4张 */
 
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 6px 8px 16px rgba(0,0,0,0.12);
-}
-
+/* --- 图片样式 --- */
 .project-card img {
   width: 100%;
   height: 160px;
@@ -135,6 +146,7 @@ footer {
   filter: brightness(1.1);
 }
 
+/* --- 标题与文字 --- */
 .project-card h3 {
   color: #285943;
   font-size: 1.2rem;
@@ -148,6 +160,15 @@ footer {
   margin-bottom: 1rem;
   transition: transform 0.3s ease;
 }
+.project-card:hover h3 {
+  transform: translateY(-2px);
+  color: #3a7d5b;  /* hover时轻微提亮 */
+}
+.project-card:hover p {
+  transform: translateY(-2px);
+}
+
+/* --- 链接样式 --- */
 .project-card a {
   color: #3a7d5b;
   font-weight: 500;
@@ -157,10 +178,6 @@ footer {
 .project-card a:hover {
   color: #68b68c;
   text-decoration: underline;
-}
-.project-card:hover h3,
-.project-card:hover p {
-  transform: translateY(-2px);
 }
 
 /* --- Dropdown Menu --- */
@@ -253,22 +270,6 @@ button:hover, .btn:hover {
   background-color: #68b68c;
 }
 
-/* --- Fade Animations --- */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes fadeInCard {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 /* --- Photo Gallery (Masonry Layout) --- */
 .photo-gallery {
   column-count: 3;
@@ -302,5 +303,32 @@ button:hover, .btn:hover {
 @media (max-width: 500px) {
   .photo-gallery {
     column-count: 1;
+  }
+}
+/* --- Project Card 动画触发 --- */
+body {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* --- Fade Animations --- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
