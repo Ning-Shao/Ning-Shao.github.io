@@ -270,19 +270,7 @@ button:hover, .btn:hover {
   background-color: #68b68c;
 }
 
-/* --- Responsive: smaller screen 2 columns --- */
-@media (max-width: 800px) {
-  .photo-gallery {
-    column-count: 2;
-  }
-}
 
-/* --- Responsive: mobile single column --- */
-@media (max-width: 500px) {
-  .photo-gallery {
-    column-count: 1;
-  }
-}
 /* --- Project Card 动画触发 --- */
 body {
   animation: fadeInUp 1s ease-out forwards;
