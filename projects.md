@@ -35,7 +35,7 @@ Here are some examples of my work — blending data, design, and philosophy.
     <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?w=600" alt="AI & Rhetoric Essay Series">
     <h3>Essays and Poems on Technology and Humanity</h3>
     <p>Philosophical reflections on the relationship between humanity and technology.</p>
-    <a href="#">Read Essay</a>
+    <a href="/essay-and-poem">Read Essay</a>
   </div>
 
   <div class="project-card">
