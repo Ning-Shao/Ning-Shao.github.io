@@ -35,14 +35,14 @@ Here are some examples of my work — blending data, design, and philosophy.
     <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?w=600" alt="AI & Rhetoric Essay Series">
     <h3>Essays and Poems on Technology and Humanity</h3>
     <p>Philosophical reflections on the relationship between humanity and technology.</p>
-    <a href="/essay-and-poem">Read Essay</a>
+    <a href="{{ '/projects/essay-and-poem/' | relative_url }}">Essays and Poems</a>
   </div>
 
   <div class="project-card">
     <img src="{{ '/assets/images/painting_brushes.jpg' | relative_url }}" alt="Paintings">
     <h3>Artworks: Traditional & Digital</h3>
     <p>Digital painting, oil paintings, and Chinese calligraphy exploring emotion and embodiment.</p>
-    <a href="/artwork-gallery">View Gallery</a>
+    <a href="{{ '/projects/artwork-gallery/' | relative_url }}">View Gallery</a>
   </div>
 
 
