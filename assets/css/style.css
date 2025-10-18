@@ -168,15 +168,6 @@ footer {
   transform: translateY(-2px);
 }
 
-/* --- essay and poem --- */
-
-.poem {
-  font-family: 'Georgia', serif;
-  line-height: 1.8;
-  white-space: pre-line;
-  margin-left: 2rem;
-}
-
 /* --- 链接样式 --- */
 .project-card a {
   color: #3a7d5b;
