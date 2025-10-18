@@ -255,7 +255,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* --- Buttons --- */
+/* --- Primary Buttons --- */
 button, .btn {
   background-color: #3a7d5b;
   color: white;
@@ -269,6 +269,27 @@ button, .btn {
 button:hover, .btn:hover {
   background-color: #68b68c;
 }
+
+/* --- Outline Buttons (for navigation links like Back/Return) --- */
+.btn-outline {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #2e5b4e;
+  border: 1.5px solid #2e5b4e;
+  border-radius: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.btn-outline:hover {
+  background-color: rgba(46, 91, 78, 0.05);
+  transform: translateY(-1px);
+}
+
+/* --- Buttons: Link-style (Text-only) --- */
 
 
 /* --- Project Card 动画触发 --- */

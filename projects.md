@@ -45,7 +45,9 @@ Here are some examples of my work — blending data, design, and philosophy.
     <a href="/artwork-gallery">View Gallery</a>
   </div>
 
+
 </div>
 
 
-[← Return to Home](/){: .return }
+[← Return to Home]({{ '/' | relative_url }}){: .btn-outline}
+
