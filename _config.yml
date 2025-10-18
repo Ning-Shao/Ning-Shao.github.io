@@ -11,3 +11,5 @@ navbar_links:
   
 include:
   - assets/css/style.css
+
+permalink: pretty
