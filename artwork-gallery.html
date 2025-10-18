@@ -5,29 +5,37 @@ title: Artwork Gallery
 
 {% include nav.html %}
 
-<h1> Artwork Gallery</h1>
+<h1>Artwork Gallery</h1>
 <p>A collection of my paintings, digital works, and calligraphy.</p>
 
 <div class="gallery-container">
 
   <div class="gallery-item">
-    <img src="{{ '/assets/images/sunrise_oil_painting.jpg' | relative_url }}" alt="Sunrise Oil Painting">
-    <p class="caption">Sunset Over Water</p>
+    <input type="checkbox" id="img1" class="modal-toggle" />
+    <label for="img1" class="gallery-thumb">
+      <img src="{{ '/assets/images/sunrise_oil_painting.jpg' | relative_url }}" alt="Sunset Over Water">
+      <p class="caption">Sunset Over Water</p>
+    </label>
+    <div class="modal">
+      <label for="img1" class="overlay"></label>
+      <div class="modal-content">
+        <img src="{{ '/assets/images/lotus.jpg' | relative_url }}" alt="Sunset Over Water">
+      </div>
+    </div>
   </div>
 
   <div class="gallery-item">
-    <img src="{{ '/assets/images/lotus.jpg' | relative_url }}" alt="Water Lilies">
-    <p class="caption">Water Lilies</p>
-  </div>
-
-  <div class="gallery-item">
-    <img src="{{ '/assets/images/art3.jpg' | relative_url }}" alt="Abstract Composition">
-    <p class="caption">Abstract Composition</p>
-  </div>
-
-  <div class="gallery-item">
-    <img src="{{ '/assets/images/art4.jpg' | relative_url }}" alt="Calligraphy Series">
-    <p class="caption">Calligraphy Series</p>
+    <input type="checkbox" id="img2" class="modal-toggle" />
+    <label for="img2" class="gallery-thumb">
+      <img src="{{ '/assets/images/art2.jpg' | relative_url }}" alt="Water Lilies">
+      <p class="caption">Water Lilies</p>
+    </label>
+    <div class="modal">
+      <label for="img2" class="overlay"></label>
+      <div class="modal-content">
+        <img src="{{ '/assets/images/art2.jpg' | relative_url }}" alt="Water Lilies">
+      </div>
+    </div>
   </div>
 
 </div>
@@ -37,7 +45,7 @@ title: Artwork Gallery
 </p>
 
 <style>
-/* === Artwork Gallery Styling === */
+/* === Gallery Layout === */
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -46,26 +54,35 @@ title: Artwork Gallery
 }
 
 .gallery-item {
+  position: relative;
   text-align: center;
-  background-color: rgba(255,255,255,0.6);
+}
+
+/* 缩略图样式 */
+.gallery-thumb {
+  cursor: pointer;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 16px;
   padding: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.gallery-item:hover {
+.gallery-thumb:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
-.gallery-item img {
+.gallery-thumb img {
   width: 100%;
-  height: 240px;
-  object-fit: cover;
+  max-height: 420px;
+  object-fit: contain; /* 完整显示整张画 */
   border-radius: 12px;
+  background-color: #f8f8f8;
 }
 
+/* 图片下方标题 */
 .caption {
   margin-top: 0.5rem;
   font-size: 0.95rem;
@@ -73,7 +90,62 @@ title: Artwork Gallery
   font-style: italic;
 }
 
-/* === Back Link Styling === */
+/* === Modal 放大预览 === */
+.modal-toggle {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.15); /* 半透明柔光背景 */
+  backdrop-filter: blur(8px);            /* 模糊效果 */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 999;
+}
+
+/* 弹出层内容 */
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  max-width: 90%;
+  max-height: 90%;
+  transition: transform 0.3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* 勾选状态时显示放大图 */
+.modal-toggle:checked ~ .modal {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-toggle:checked ~ .modal .modal-content {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* 背景遮罩可点击关闭 */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* === 返回按钮 === */
 .back-link {
   text-align: left;
   margin-top: 2rem;
@@ -93,4 +165,5 @@ title: Artwork Gallery
 .back-link a:hover {
   background-color: #b8d7be;
 }
+
 </style>
