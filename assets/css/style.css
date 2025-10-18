@@ -289,6 +289,9 @@ button:hover, .btn:hover {
   transform: translateY(-1px);
 }
 
+/* --- Buttons: Link-style (Text-only) --- */
+
+
 /* --- Project Card 动画触发 --- */
 body {
   animation: fadeInUp 1s ease-out forwards;
