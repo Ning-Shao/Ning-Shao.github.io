@@ -27,7 +27,7 @@ title: Essays and Poems
   <div class="essay-card poem-card">
     <h3>Poems on Solitude and Connection</h3>
     <p>Bilingual (English & Chinese) poems expressing transitions, distance, and belonging.</p>
-    <a href="{{ '/assets/files/the-door.html' | relative_url }}" class="btn-outline" target="_blank">Read Poems</a>
+    <a href="{{ '/projects/poems/the-door.html' | relative_url }}" class="btn-outline" target="_blank">Read Poems</a>
   </div>
 
 </div>
@@ -38,15 +38,16 @@ title: Essays and Poems
 
 <!-- === Styling === -->
 <style>
+
 /* === Header Section === */
 h1 {
-  font-family: 'Georgia', serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: #2c554f;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 h1 + p {
@@ -82,13 +83,15 @@ h1 + p {
 }
 
 .essay-card h3 {
-  font-family: 'Georgia', serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 1.25rem;
   color: #2c554f;
+  font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .essay-card p {
+  font-family: 'Nunito Sans', sans-serif;
   font-size: 0.95rem;
   line-height: 1.6;
   color: #333;
@@ -121,15 +124,25 @@ h1 + p {
 }
 
 /* === Back Link === */
+.back-link {
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
 .back-link a {
+  display: inline-block;
   color: #2c554f;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
 }
 
 .back-link a:hover {
-  border-bottom: 1px solid #2c554f;
+  color: #1e3d38;
+  transform: translateX(-3px);
 }
+  
 </style>
