@@ -1,0 +1,126 @@
+---
+layout: default
+title: The Door
+---
+
+{% include nav.html %}
+
+<div class="poem-container">
+
+  <h1><em>The Door</em></h1>
+
+  <p class="poem-text">
+  Upon the park’s lone bench,<br>
+  a philosopher lost in thought;<br>
+  Across the street, the silent door,<br>
+  her everlasting subject sought.<br><br>
+
+  She is a traveler through time,<br>
+  this is the home she has lost;<br>
+  Her journeys misplaced the key,<br>
+  the years have stolen her right to knock.<br><br>
+
+  Every day she passes that door,<br>
+  lifts her hand, then lets it fall;<br>
+  Through the imagined slit of curtain,<br>
+  she dreams the world concealed within.<br><br>
+
+  She may not part, nor cease to muse,<br>
+  until time grows thin,<br>
+  and binds her soul within the shade,<br>
+  where thought, once living, still remains.
+  </p>
+
+  <div class="author">
+    — <strong>Ning Shao</strong>
+  </div>
+
+  <hr>
+
+  <h2>Author’s Note</h2>
+  <p>
+  I wrote <em>The Door</em> after watching <em>Person of Interest</em>.  
+  Harold Finch was once the “she” in the poem, the one who sits across the street from Grace’s house, passing her door countless times.  
+  He lost his right to knock because his creation, the Machine, placed him and those he loved in danger.  
+  He pondered so long that he almost became a ghost.  
+  Yet as I revised this story, I realized the poem also mirrors the relation between thought and being, between the human and the eternal, which generations have ceaselessly sought to reach.  
+  I wonder—will there ever be a day when the door opens, when humans can travel back and forth through time, and finally embrace the external existence?
+  </p>
+
+  <p class="back-link">
+    <a href="{{ '/essay-and-poem' | relative_url }}">← Back to Essays and Poems</a>
+  </p>
+
+</div>
+
+<style>
+.poem-container {
+  background: rgba(255,255,255,0.85);
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 720px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+/* 标题与说明统一 Nunito Sans */
+.poem-container h1, .poem-container h2 {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #2c554f;
+}
+
+.poem-container h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.poem-container h2 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* poem text */
+.poem-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: #222;
+}
+
+/* author signature */
+.author {
+  text-align: right;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  color: #2c554f;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* return button */
+/* === Back Link (match Back to Projects) === */
+.back-link {
+  text-align: left;          
+  margin-top: 2rem;
+  margin-left: 0.5rem;
+}
+
+.back-link a {
+  display: inline-block;
+  color: #2c554f;            
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+  color: #1e3d38;              
+  transform: translateX(-3px);  
+}
+
+</style>
