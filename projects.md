@@ -42,7 +42,7 @@ Here are some examples of my work — blending data, design, and philosophy.
     <img src="{{ '/assets/images/painting_brushes.jpg' | relative_url }}" alt="Paintings">
     <h3>Artworks: Traditional & Digital</h3>
     <p>Digital painting, oil paintings, and Chinese calligraphy exploring emotion and embodiment.</p>
-    <a href="/artwork_gallery">View Gallery</a>
+    <a href="/artwork-gallery">View Gallery</a>
   </div>
 
 </div>
