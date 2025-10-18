@@ -12,4 +12,4 @@ Hi! I’m Ning Shao — a writer, designer, and researcher passionate about AI, 
 [Download my CV](assets/files/cv_resume.pdf)
 
 
-[← Return to Home](/){: .return }
+[← Return to Home]({{ '/' | relative_url }}){: .btn-outline}
