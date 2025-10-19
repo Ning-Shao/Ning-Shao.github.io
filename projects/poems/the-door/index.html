@@ -5,35 +5,68 @@ title: The Door
 
 {% include nav.html %}
 
-<div class="poem-container">
+<h1><em>The Door 门前</em></h1>
+<p class="subtitle">A bilingual poem on time, thought, and return.</p>
 
-  <h1><em>The Door</em></h1>
+<div class="poem-bilingual">
 
-  <p class="poem-text">
-  Upon the park’s lone bench,<br>
-  a philosopher lost in thought;<br>
-  Across the street, the silent door,<br>
-  her everlasting subject sought.<br><br>
+  <!-- English version -->
+  <div class="poem-block">
+    <h3>English</h3>
+    <p>
+      Upon the park’s lone bench,<br>
+      a philosopher lost in thought;<br>
+      Across the street, the silent door,<br>
+      her everlasting subject sought.<br><br>
 
-  She is a traveler through time,<br>
-  this is the home she has lost;<br>
-  Her journeys misplaced the key,<br>
-  the years have stolen her right to knock.<br><br>
+      She is a traveler through time,<br>
+      this is the home she has lost;<br>
+      Her journeys misplaced the key,<br>
+      the years have stolen her right to knock.<br><br>
 
-  Every day she passes that door,<br>
-  lifts her hand, then lets it fall;<br>
-  Through the imagined slit of curtain,<br>
-  she dreams the world concealed within.<br><br>
+      Every day she passes that door,<br>
+      lifts her hand, then lets it fall;<br>
+      Through the imagined slit of curtain,<br>
+      she dreams the world concealed within.<br><br>
 
-  She may not part, nor cease to muse,<br>
-  until time grows thin,<br>
-  and binds her soul within the shade,<br>
-  where thought, once living, still remains.
-  </p>
-
-  <div class="author">
-    — <strong>Ning Shao</strong>
+      She may not part, nor cease to muse,<br>
+      until time grows thin,<br>
+      and binds her soul within the shade,<br>
+      where thought, once living, still remains.
+    </p>
   </div>
+
+  <!-- Chinese version -->
+  <div class="poem-block">
+    <h3>中文</h3>
+    <p>
+      她坐在公园的木椅上，<br>
+      像在思索的哲学家。<br>
+      对街上紧闭的大门，<br>
+      是她永恒的课题。<br><br>
+
+      她是时间的旅人，<br>
+      这是她遗失的家。<br>
+      岁月剥夺了她的敲门权，<br>
+      旅行弄丢了她的钥匙。<br><br>
+
+      每日经过那扇门，<br>
+      手举起，又放下。<br>
+      透过那不存在的窗帘缝，<br>
+      她猜想房子里面的世界。<br><br>
+
+      她无法离开此地，<br>
+      她会一直思索，<br>
+      直到岁月将她化作幽魂，<br>
+      成为这房子的影子一部分。
+    </p>
+  </div>
+
+</div>
+
+<div class="author">
+  — <strong>Ning Shao</strong>
+</div>
 
   <hr>
 
@@ -53,50 +86,73 @@ title: The Door
 </div>
 
 <style>
-.poem-container {
-  background: rgba(255,255,255,0.85);
-  border-radius: 20px;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 720px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+
+/* === Layout === */
+.poem-bilingual {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
-/* 标题与说明统一 Nunito Sans */
-.poem-container h1, .poem-container h2 {
-  font-family: 'Nunito Sans', sans-serif;
-  color: #2c554f;
+/* === Poem Block === */
+.poem-block {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
 }
 
-.poem-container h1 {
-  font-size: 1.8rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
+.poem-block:hover {
+  transform: translateY(-4px);
 }
 
-.poem-container h2 {
-  font-size: 1.1rem;
-  margin-top: 2rem;
-  margin-bottom: 0.8rem;
-}
-
-/* poem text */
-.poem-text {
-  font-family: 'Nunito Sans', sans-serif;
-  font-style: italic;
-  font-size: 1.05rem;
-  line-height: 1.9;
-  color: #222;
-}
-
-/* author signature */
-.author {
-  text-align: right;
+.poem-block h3 {
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   color: #2c554f;
+  margin-bottom: 1rem;
+}
+
+.poem-block p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #222;
+  white-space: pre-line;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(44, 85, 79, 0.2);
+  margin: 2rem 0;
+}
+
+
+/* === Page Title & Subtitle === */
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #2c554f;
+  font-size: 2rem;
+  text-align: center;
   margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #444;
+  font-family: 'Nunito Sans', sans-serif;
+  margin-bottom: 2rem;
+}
+
+/* === Author Signature === */
+.author {
+  text-align: right;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #2c554f;
+  font-weight: 600;
+  margin-top: 1.5rem;
 }
   
 </style>
