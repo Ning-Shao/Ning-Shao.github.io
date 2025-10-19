@@ -104,45 +104,7 @@ h1 + p {
   border-left: 4px solid #4a766d;
 }
 
-/* === Button Styling === */
-.btn-outline {
-  display: inline-block;
-  padding: 0.45rem 0.9rem;
-  border: 1px solid #2c554f;
-  border-radius: 8px;
-  color: #2c554f;
-  text-decoration: none;
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
-  background: #2c554f;
-  color: #fff;
-  transform: translateY(-2px);
-}
-
-/* === Back Link Styling (match Artwork Gallery) === */
-.back-link {
-  text-align: left;
-  margin-top: 2rem;
-  margin-left: 0.5rem;
-}
-
-.back-link a {
-  display: inline-block;
-  color: #2c554f;
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.back-link a:hover {
-  color: #1e3d38;
-  transform: translateX(-3px);
-}
+/* return button */
+<a href="{{ '/projects' | relative_url }}" class="btn-outline">← Back to Projects</a>
 
 </style>
