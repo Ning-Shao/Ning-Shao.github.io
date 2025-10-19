@@ -90,7 +90,6 @@ title: The Door
 .poem-bilingual {
   display: grid;
   grid-template-columns: 1fr 1fr; 
-  align-items: stretch;          /*same height*/
   gap: 1.25rem;                 
   max-width: 780px;              /* 限制整体宽度 */
   margin: 2rem auto;             /* 居中 */
@@ -111,9 +110,6 @@ title: The Door
   padding: 1.5rem;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
-  display: flex;              /* ★ 新增 */
-  flex-direction: column;     /* ★ 让内部从上到下排列 */
-  justify-content: space-between; /* ★ 让上下留白自然对齐 */
 }
   
 .poem-block:hover {
