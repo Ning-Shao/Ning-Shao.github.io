@@ -92,8 +92,8 @@ title: The Door
 /* === Layout === */
 .poem-bilingual {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr; /* 明确两栏均分 */
-  gap: 1.25rem;                  /* 间距稍微收紧 */
+  grid-template-columns: 1fr 1fr; 
+  gap: 1.25rem;                 
   max-width: 780px;              /* 限制整体宽度 */
   margin: 2rem auto;             /* 居中 */
   padding: 0 1rem;               /* 增加两侧内边距 */
@@ -108,13 +108,13 @@ title: The Door
 
 /* === Poem Block === */
 .poem-block {
-  background: rgba(255, 255, 255, 0.85);
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.9), rgba(235,250,245,0.85));
   border-radius: 16px;
   padding: 1.5rem;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   transition: transform 0.3s ease;
 }
-
+  
 .poem-block:hover {
   transform: none;
 }
