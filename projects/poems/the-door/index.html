@@ -3,6 +3,8 @@ layout: default
 title: The Door
 ---
 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+
 {% include nav.html %}
 
 <h1><em>The Door 门前</em></h1>
@@ -90,9 +92,18 @@ title: The Door
 /* === Layout === */
 .poem-bilingual {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+  grid-template-columns: 0.95fr 1.05fr; /* 明确两栏均分 */
+  gap: 1.25rem;                  /* 间距稍微收紧 */
+  max-width: 780px;              /* 限制整体宽度 */
+  margin: 2rem auto;             /* 居中 */
+  padding: 0 1rem;               /* 增加两侧内边距 */
+}
+
+@media (min-width: 1000px) {
+  .poem-bilingual {
+    max-width: 820px;
+    gap: 1rem;
+  }
 }
 
 /* === Poem Block === */
@@ -105,7 +116,7 @@ title: The Door
 }
 
 .poem-block:hover {
-  transform: translateY(-4px);
+  transform: none;
 }
 
 .poem-block h3 {
@@ -129,6 +140,13 @@ hr {
   margin: 2rem 0;
 }
 
+/* === Separate font for Chinese === */
+
+.poem-block:nth-child(2) p { /* 中文诗那一栏 */
+  font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', serif;
+  font-size: 1.05rem;
+  line-height: 2;
+}
 
 /* === Page Title & Subtitle === */
 h1 {
@@ -154,5 +172,5 @@ h1 {
   font-weight: 600;
   margin-top: 1.5rem;
 }
-  
+
 </style>
