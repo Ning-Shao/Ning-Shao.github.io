@@ -1,0 +1,78 @@
+# -----------------------------
+# System Files (macOS)
+# -----------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two carriage returns
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# -----------------------------
+# Python and Streamlit
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Virtual environments
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Streamlit cache and configuration
+.streamlit/
+
+# -----------------------------
+# Jupyter Notebooks
+# -----------------------------
+.ipynb_checkpoints/
+jupyter_notebook_config.py
+
+# -----------------------------
+# VS Code Editor
+# -----------------------------
+.vscode/
+.history/
+*.code-workspace
+
+# -----------------------------
+# Project Artifacts
+# -----------------------------
+# Ignore temporary data, CSV exports, and figures if not meant for version control
+*.csv
+*.tsv
+*.dat
+*.out
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Uncomment the following line if you want to ignore large datasets
+# data/
+
+# -----------------------------
+# OS or Editor Backups
+# -----------------------------
+*~
+*.swp
+*.swo
