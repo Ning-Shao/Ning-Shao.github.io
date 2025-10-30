@@ -14,7 +14,7 @@ Here are some examples of my work — blending data, design, and philosophy.
     <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?w=600" alt="UX Data Interactive Dashboard">
     <h3>UX Data Interactive Dashboard</h3>
     <p>An interactive UX survey system using Python and Flask to collect multi-round user feedback.</p>
-    <a href="{{ '/projects/streamlit_app.py/' | relative_url }}">View on GitHub</a>
+    <a href="{{ '/projects/streamlit_app.py' | relative_url }}">Click to View</a>
   </div>
 
   <div class="project-card">
