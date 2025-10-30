@@ -142,7 +142,7 @@ with tab2:
     top_cats = top_cats.sort_values(ascending=False)
 
     if "OTHERS" in top_cats.index:
-        others_index = lsit(top_cats.index).index("OTHERS")
+        others_index = list(top_cats.index).index("OTHERS")
         wedges[others_index].set_alpha(0.3)
     
     fig2, ax2 = plt.subplots(figsize=(6, 6))
@@ -221,6 +221,7 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Average Rating", f"{filtered['Rating'].mean():.2f}")
 col2.metric("Average Installs", f"{filtered['Installs'].mean():,.0f}")
 col3.metric("Average Success Score", f"{filtered['Success_Score'].mean():.2f}")
+
 
 
 
