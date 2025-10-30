@@ -150,7 +150,7 @@ with tab2:
 # --- Tab 3: Box Plot ---
 with tab3:
     fig3, ax3 = plt.subplots(figsize=(7, 4))
-    sns.boxplot(x="Category", x=metric, data=data, palette=["#88C9BF"], ax=ax3)
+    sns.boxplot(y="Category", x=metric, data=data, palette=["#88C9BF"], ax=ax3)
 
     ax3.set_title(f"{metric} Spread Across Categories", fontsize=13, color="#4A4A4A", pad=15)
     ax3.set_xlabel(metric, fontsize=11)
@@ -218,6 +218,7 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Average Rating", f"{filtered['Rating'].mean():.2f}")
 col2.metric("Average Installs", f"{filtered['Installs'].mean():,.0f}")
 col3.metric("Average Success Score", f"{filtered['Success_Score'].mean():.2f}")
+
 
 
 
