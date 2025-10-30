@@ -242,3 +242,4 @@ col3.metric("Average Success Score", f"{filtered['Success_Score'].mean():.2f}")
 
 
 
+
