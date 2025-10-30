@@ -126,18 +126,18 @@ with tab2:
     # Count all categories
     cat_counts = data["Category"].value_counts()
 
-    if category not in cat_counts.head(8).index:
-        cat_counts = pd.concat([
-            cat_counts.head(7),
-            pd.Series({category: len(filtered)})
-        ])
+    top_cats = cat_counts.head(7)
+    if category not in cat_counts.index:
+        top_cats[category] = cat_counts[category]
+    others_sum = cat_counts[~cat_counts.index.isin(top_cats.index)].sum()
+    top_cats["OTHERS"] = others_sum
 
-    cat_counts = cat_counts.sort_values(ascending=False)
+    top_cats = top_cats.sort_values(ascending=False)
     
     fig2, ax2 = plt.subplots(figsize=(6, 6))
     wedges, texts, autotexts = ax2.pie(
-        cat_counts,
-        labels=cat_counts.index,
+        top_cats,
+        labels=top_cats.index,
         autopct="%1.1f%%",
         startangle=90,
         colors=["#88C9BF", "#B8E0D2", "#C4DFE6", "#6B9080", "#A4C3B2", "#CCE3DE", "#D8E2DC", "#F8EDEB"],
@@ -149,10 +149,10 @@ with tab2:
 
 # --- Tab 3: Box Plot ---
 with tab3:
-    fig3, ax3 = plt.subplots(figsize=(7, 4))
+    fig3, ax3 = plt.subplots(figsize=(9, 14))
     sns.boxplot(y="Category", x=metric, data=data, palette=["#88C9BF"], ax=ax3)
 
-    ax3.set_title(f"{metric} Spread Across Categories", fontsize=13, color="#4A4A4A", pad=15)
+    ax3.set_title(f"{metric} Spread Across Categories", fontsize=13, color="#4A4A4A", pad=20)
     ax3.set_xlabel(metric, fontsize=11)
     ax3.set_ylabel("Category", fontsize=11)
 
@@ -175,15 +175,7 @@ desc = desc.rename(columns={
 st.markdown(f"### Descriptive Statistics for *{category}* Apps")
 
 # use streamlit dataframe
-st.dataframe(
-    desc.style.background_gradient(
-        cmap="YlGn",     
-        axis=None          
-    ).set_properties(**{
-        'color': '#3C3C3C',
-        'border-color': '#CFE8CC'
-    })
-)
+st.dataframe(desc.style.set_properties(**{'text-align': 'right'}))
 
 st.markdown("""
     <style>
@@ -218,6 +210,7 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Average Rating", f"{filtered['Rating'].mean():.2f}")
 col2.metric("Average Installs", f"{filtered['Installs'].mean():,.0f}")
 col3.metric("Average Success Score", f"{filtered['Success_Score'].mean():.2f}")
+
 
 
 
