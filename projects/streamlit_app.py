@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.title("Google Store User Data Dashboard")
 st.markdown("_Prototype_by_Ning_Shao_")
 
-data = pd.read_csv("googleplaystore.csv")
+data = pd.read_csv("projects/googleplaystore.csv")
 
 # Drop rows with missing or invalid values
 data = data.dropna(subset=["Rating", "Installs"])
