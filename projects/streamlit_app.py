@@ -147,7 +147,7 @@ with tab2:
     wedges, texts, autotexts = ax2.pie(
         top_cats,
         labels=top_cats.index,
-        autopct=lambda pct: f"{pct;.1f}%" if pct >= 2 else ""
+        autopct=lambda pct: f"{pct:.1f}%" if pct >= 2 else ""
         startangle=90,
         colors=["#88C9BF", "#B8E0D2", "#C4DFE6", "#6B9080", "#A4C3B2", "#CCE3DE", "#D8E2DC", "#F8EDEB"],
         textprops={"color": "#3C3C3C", "fontsize": 10}
@@ -231,6 +231,8 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Average Rating", f"{filtered['Rating'].mean():.2f}")
 col2.metric("Average Installs", f"{filtered['Installs'].mean():,.0f}")
 col3.metric("Average Success Score", f"{filtered['Success_Score'].mean():.2f}")
+
+
 
 
 
