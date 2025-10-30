@@ -1,3 +1,4 @@
+import numpy as np
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
@@ -7,9 +8,18 @@ st.markdown("_Prototype_by_Ning_Shao_")
 
 data = pd.read_csv("projects/googleplaystore.csv")
 
-# Drop rows with missing or invalid values
-data = data.dropna(subset=["Rating", "Installs"])
-data["Installs"] = data["Installs"].replace('[+,]', '', regex=True).astype(int)
+# Clean up 'Installs' column robustly
+data["Installs"] = (
+    data["Installs"]
+    .replace('[+,]', '', regex=True)
+    .replace('Varies with device', None)
+    .replace('Free', None)
+)
+
+# Convert to numeric safely (non-numeric -> NaN)
+data["Installs"] = pd.to_numeric(data["Installs"], errors='coerce')
+
+data = data.dropna(subset=["Installs", "Rating"])
 
 # Add a combined success score (0.6 * Rating + 0.4 * log(Installs))
 data["Success_Score"] = (data["Rating"] * 0.6) + (np.log1p(data["Installs"]) * 0.4)
@@ -35,4 +45,5 @@ fig, sc = plt.subplots()
 ax.hist(filtered["Rating"].dropna(), bins=10, color="skyblue", edgecolor="black")
 ax.set_xlabel("Rating")
 ax.set_ylabel("Frequency")
+
 st.pyplot(fig)
