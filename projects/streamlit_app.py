@@ -126,34 +126,44 @@ with tab2:
     # Count all categories
     cat_counts = data["Category"].value_counts()
 
+    # to make OTHERS <= 40%
     N = 7
-    top_cats = cat_counts.head(N)
-
     while (cat_counts[N:].sum() / cat_counts.sum())>0.4 and N <15: 
         N += 2
-        top_cats = cat_counts.head(N)
+        top_cats = cat_counts.head(N).copy()
         
-    if category not in cat_counts.index:
+    # ensure the current selected category appears    
+    if category in cat_counts.index and category not in top_cats.index:
         top_cats[category] = cat_counts[category]
-        
+    # add OTHERS    
     others_sum = cat_counts[~cat_counts.index.isin(top_cats.index)].sum()
-    top_cats["OTHERS"] = others_sum
+    if others_sum >0: 
+        top_cats["OTHERS"] = others_sum
 
     top_cats = top_cats.sort_values(ascending=False)
 
-    if "OTHERS" in top_cats.index:
-        others_index = list(top_cats.index).index("OTHERS")
-        wedges[others_index].set_alpha(0.3)
-    
+    #define pie chart
     fig2, ax2 = plt.subplots(figsize=(6, 6))
     wedges, texts, autotexts = ax2.pie(
         top_cats,
         labels=top_cats.index,
-        autopct="%1.1f%%",
+        autopct=lambda pct: f"{pct;.1f}%" if pct >= 2 else ""
         startangle=90,
         colors=["#88C9BF", "#B8E0D2", "#C4DFE6", "#6B9080", "#A4C3B2", "#CCE3DE", "#D8E2DC", "#F8EDEB"],
         textprops={"color": "#3C3C3C", "fontsize": 10}
     )
+
+    #make OTHERS semi-transparent
+    if "OTHERS" in top_cats.index:
+        others_index = list(top_cats.index).index("OTHERS")
+        wedges[others_index].set_alpha(0.35)
+
+    #highlight current category
+    if category in top_cats.index: 
+        sel_idx = list(top_cats.index).index(category)
+        wedges[sel_idx].set_edgecolor("#355E3B")
+        wedges[sel_idx].set_linewidth(2)
+
     ax2.axis("equal")
     ax2.set_title("Category Distribution (Top Categories + Current)", fontsize=13, color="#4A4A4A", pad=20)
     st.pyplot(fig2)
@@ -221,6 +231,7 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Average Rating", f"{filtered['Rating'].mean():.2f}")
 col2.metric("Average Installs", f"{filtered['Installs'].mean():,.0f}")
 col3.metric("Average Success Score", f"{filtered['Success_Score'].mean():.2f}")
+
 
 
 
