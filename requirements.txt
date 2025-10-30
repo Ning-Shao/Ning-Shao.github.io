@@ -1,3 +1,5 @@
-git add requirements.txt
-git commit -m "Add requirements for Streamlit deployment"
-git push origin dev
+streamlit
+pandas
+matplotlib
+numpy
+seaborn
