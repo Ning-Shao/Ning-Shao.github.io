@@ -322,6 +322,7 @@ body {
 }
 
 /* --- contact page ---*/
+
 .contact-form {
   background-color: rgba(255, 255, 255, 0.55);
   border-radius: 1.2rem;
@@ -331,11 +332,23 @@ body {
   gap: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   backdrop-filter: blur(6px);
+  width: 100%;
+  max-width: 480px;
+  margin-top: 1.5rem;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+   display:block;
+   width: 100%;
 }
 
 .contact-form label {
   font-weight: 600;
   color: #2e553e;
+  margin-bottom: 0.2rem;
 }
 
 .contact-form input,
@@ -346,10 +359,12 @@ body {
   font-family: inherit;
   resize: vertical;
   background-color: rgba(255,255,255,0.8);
+   box-sizing: border-box;
 }
 
 .contact-form button {
-  align-self: flex-start;
+  align-self: flex-end;
+  width: fit-content;
   background-color: #3b6e3b;
   color: white;
   border: none;
