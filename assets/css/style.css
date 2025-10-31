@@ -100,9 +100,9 @@ footer {
   margin-top: 2rem;
 }
 
-/* --- Project Card (玻璃拟态效果) --- */
+/* --- Project Card (glass simulation) --- */
 .project-card {
-  background: rgba(255, 255, 255, 0.55);  /* 半透明白玻璃 */
+  background: rgba(255, 255, 255, 0.55);  /* semi-transparent glass */
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 14px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -162,13 +162,13 @@ footer {
 }
 .project-card:hover h3 {
   transform: translateY(-2px);
-  color: #3a7d5b;  /* hover时轻微提亮 */
+  color: #3a7d5b;  /* brighter while hovering */
 }
 .project-card:hover p {
   transform: translateY(-2px);
 }
 
-/* --- 链接样式 --- */
+/* --- link style --- */
 .project-card a {
   color: #3a7d5b;
   font-weight: 500;
@@ -319,4 +319,46 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* --- contact page ---*/
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 1.2rem;
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  backdrop-filter: blur(6px);
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #2e553e;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #8fa88f;
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+  font-family: inherit;
+  resize: vertical;
+  background-color: rgba(255,255,255,0.8);
+}
+
+.contact-form button {
+  align-self: flex-start;
+  background-color: #3b6e3b;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2e552e;
 }
