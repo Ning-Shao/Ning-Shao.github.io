@@ -10,11 +10,9 @@ title: Contact
 Email: ningshao199981@outlook.com  
 GitHub: [Ning-Shao](https://github.com/Ning-Shao)  
 
-### window for users
-
 <form action="https://formspree.io/f/mldopkjb" method="POST" class="contact-form">
-  <label>Your Name:</</label>
-  <input type="text" name="name" required>
+  <label>Your Name:</label>
+  <input type="text" id="name" name="name" required>
 
   <label for="message">Your message:</label>
   <textarea id="message" name="message" rows="4" required></textarea>
