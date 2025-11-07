@@ -28,14 +28,14 @@ title: Home
 <section id="studio" class="fade-in">
   <h2>Jojo's Design Studio</h2>
   <p>
-    Build your stylish personal brand.<br>
-    Provide <strong>personal website</strong> and <strong>resume development</strong> service, with your personal traits.
+    Descriptions.<br>
+    More descriptions.
   </p>
 
   <div class="card-container">
     <!-- Card 1 -->
     <div class="card" data-pdf="{{ '/design/cvsample1.pdf' | relative_url }}">
-      <iframe src="https://docs.google.com/gview?embedded=true&url=https://ning-shao.github.io/design/cvsample1.pdf"></iframe>
+      <img src="/design/cvsample1.jpg" alt="Tech Resume">
       <div class="card-content">
         <h3>CV Sample (Click to View)</h3>
         <p>A professional LaTeX-designed resume sample.</p>
@@ -44,7 +44,7 @@ title: Home
 
     <!-- Card 2 -->
     <div class="card" data-pdf="{{ '/design/cvsample2.pdf' | relative_url }}">
-      <img src="/images/portfolio1.jpg" alt="Website Design">
+      <img src="/design/cvsample2.jpg" alt="Website Design">
       <div class="card-content">
         <h3>Website Portfolio</h3>
         <p>Showcase of personal website designs.</p>
@@ -53,10 +53,10 @@ title: Home
 
     <!-- Card 3 -->
     <div class="card" data-pdf="{{ '/design/cvsample3.pdf' | relative_url }}">
-      <img src="/images/resume2.jpg" alt="Creative Resume">
+      <img src="/design/cvsample3.jpg" alt="Academic Resume">
       <div class="card-content">
-        <h3>Creative CV</h3>
-        <p>Emphasize on visual design and personality expression.</p>
+        <h3>Academic CV</h3>
+        <p>A professional CV for academic positions written in LaTeX.</p>
       </div>
     </div>
   </div>
