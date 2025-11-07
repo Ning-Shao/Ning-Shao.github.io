@@ -29,8 +29,8 @@ title: Home
   -webkit-backdrop-filter: blur(18px);
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: none; 
   transition: all 1s ease;
 " class="fade-in">
 
@@ -121,18 +121,6 @@ title: Home
     </a>
   </div>
 </section>
-
-<script>
-  window.addEventListener('scroll', () => {
-    document.querySelectorAll('.fade-in').forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight - 100) {
-        el.style.opacity = 1;
-        el.style.transform = 'translateY(0)';
-      }
-    });  
-  });
-</script>
 
 
 
