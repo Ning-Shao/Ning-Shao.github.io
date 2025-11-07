@@ -35,9 +35,9 @@ title: Home
   <div class="card-container">
     <!-- Card 1 -->
     <div class="card" data-pdf="{{ '/design/cvsample1.pdf' | relative_url }}">
-      <img src="/design/cvsample1.jpg" alt="Tech Resume">
+      <img src="/design/cvsample1.jpg" alt="Modern Minimal CV">
       <div class="card-content">
-        <h3>CV Sample (Click to View)</h3>
+        <h3>Modern Minimal CV</h3>
         <p>A professional LaTeX-designed resume sample.</p>
       </div>
     </div>
