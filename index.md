@@ -105,7 +105,7 @@ title: Home
 
   <!-- button -->
   <div style="margin-top:2rem;">
-    <a href="https://formspree.io/f/mldopkjb" style="
+    <a href="/contact" style="
       text-decoration:none;
     background: linear-gradient(135deg, #2e503d, #5b8c63);
     color: #f9f9f7;
@@ -114,9 +114,9 @@ title: Home
     font-weight: 600;
     font-size: 1rem;
     box-shadow: 0 6px 16px rgba(46,80,61,0.25);
-    transition: all 0.3s ease;
-  " onmouseover="this.style.background='linear-gradient(135deg,#3f6b4e,#6fa47b)'"
-    onmouseout="this.style.background='linear-gradient(135deg,#2e503d,#5b8c63)'">
+    transition: background 0.4s ease, transform 0.3s ease;
+  " onmouseover="this.style.background='linear-gradient(135deg,#3f6b4e,#6fa47b)'; this.style.transform='translateY(-2px)'"
+    onmouseout="this.style.background='linear-gradient(135deg,#2e503d,#5b8c63)'; this.style.transform='translateY(0)'">
     Get Your Quote
     </a>
   </div>

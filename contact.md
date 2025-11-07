@@ -9,13 +9,14 @@ title: Contact
 
 **Email:** ningshao199981@outlook.com  
 **GitHub:** [Ning-Shao](https://github.com/Ning-Shao)  
-**LinkedIn:** <a href="https://www.linkedin.com/in/ning-shao" target="_blank" rel="noopener noreferrer">LinkedIn: Ning Shao</a>
+**LinkedIn:** <a href="https://www.linkedin.com/in/ning-shao" target="_blank" rel="noopener noreferrer">Ning Shao</a>
 
 <hr>
 
 # Leave A Message
 
 <form action="https://formspree.io/f/mldopkjb" method="POST" class="contact-form">
+  <input type="hidden" name="_redirect" value="https://ning-shao.github.io/thankyou.html">
   <label>Your Name:</label>
   <input type="text" id="name" name="name" required>
 
