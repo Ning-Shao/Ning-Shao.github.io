@@ -16,7 +16,67 @@ title: Home
 
 </div>
 
-<!-- sale window -->
+<!-- ===== PDF Modal Window ===== -->
+<div id="pdfModal" style="
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+">
+  <div style="
+    position:relative;
+    width:85%;
+    height:85%;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  ">
+
+    <!-- Close Button -->
+    <span onclick="document.getElementById('pdfModal').style.display='none'" 
+      style="
+        position:absolute;
+        top:10px;
+        right:20px;
+        font-size:2rem;
+        color:#333;
+        cursor:pointer;
+        z-index:1000;
+      ">&times;</span>
+
+    <!-- Download Button -->
+    <a href="{{ '/design/cvsample1.pdf' | relative_url }}" download style="
+      position:absolute;
+      top:12px;
+      right:70px;
+      background: linear-gradient(135deg, #2e503d, #5b8c63);
+      color: #f9f9f7;
+      padding: 0.4rem 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 10px rgba(46,80,61,0.25);
+      text-decoration:none;
+      transition: background 0.3s ease, transform 0.2s ease;
+      z-index:1000;
+    " 
+    onmouseover="this.style.background='linear-gradient(135deg,#3f6b4e,#6fa47b)'; this.style.transform='translateY(-1px)'"
+    onmouseout="this.style.background='linear-gradient(135deg,#2e503d,#5b8c63)'; this.style.transform='translateY(0)'">
+      ⬇ Download CV
+    </a>
+
+    <!-- PDF Viewer -->
+    <iframe src="{{ '/design/cvsample1.pdf' | relative_url }}" 
+      style="width:100%;height:100%;border:none;"></iframe>
+  </div>
+</div>
 
 <section id="studio" style="
   margin: 4rem auto;
@@ -50,22 +110,28 @@ title: Home
     scroll-snap-type:x mandatory;
   ">
 
-    <div style="
-      flex:0 0 320px;
-      scroll-snap-align:start;
-      border-radius:16px;
-      overflow:hidden;
-      background: rgba(255,255,255,0.65);
-      backdrop-filter: blur(6px);
-      box-shadow:0 4px 15px rgba(0,0,0,0.08);
-      transition:transform 0.3s;
-    " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-      <img src="images/resume1.jpg" alt="Resume Design" style="width:100%;height:210px;object-fit:cover;">
-      <div style="padding:1rem;">
-        <h3 style="color:#2e503d;">sample design according to your position applied</h3>
-        <p style="font-size:0.9rem;">descriptions tbd</p>
-      </div>
-    </div>
+  <!-- CV Sample Card -->
+ <div style="
+  flex:0 0 320px;
+  scroll-snap-align:start;
+  border-radius:16px;
+  overflow:hidden;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(6px);
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  transition:transform 0.3s;
+  cursor:pointer;
+" 
+onmouseover="this.style.transform='scale(1.03)'" 
+onmouseout="this.style.transform='scale(1)'"
+onclick="document.getElementById('pdfModal').style.display='flex'">
+
+  <img src="https://via.placeholder.com/320x210.png?text=CV+Sample" alt="Resume Sample" style="width:100%;height:210px;object-fit:cover;">
+  <div style="padding:1rem;">
+    <h3 style="color:#2e503d;">CV Sample (Click to View)</h3>
+    <p style="font-size:0.9rem;">A professional LaTeX-designed resume sample.</p>
+  </div>
+</div>
 
     <div style="
       flex:0 0 320px;
