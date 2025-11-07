@@ -23,10 +23,8 @@ title: Home
   max-width: 1100px;
   padding: 2.5rem;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
+  background: transparent;
+  box-shadow: none;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   opacity: 0;
