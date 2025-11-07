@@ -23,10 +23,10 @@ title: Home
   max-width: 1100px;
   padding: 2.5rem;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.25);
   box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
   opacity: 0;
@@ -34,10 +34,11 @@ title: Home
   transition: all 1s ease;
 " class="fade-in">
 
-<h2 style="color:#2e503d;font-size:2rem;font-weight:700;">Design & Resume Studio</h2>
+<h2 style="color:#2e503d;font-size:2rem;font-weight:700;">Jojo's Design Studio</h2>
 <p style="margin-top:1rem;color:#333;font-size:1.1rem;">
   Build your stylish personal brand.<br>
-  Provide <strong>personal website</strong> and <strong>resume developmeny</strong> service, with your personal traits/ 
+  Provide <strong>personal website</strong> and <strong>resume developmeny</strong> service, with your personal traits
+</p>
 
 <!-- sample display -->
 <div style="
@@ -54,7 +55,8 @@ title: Home
       scroll-snap-align:start;
       border-radius:16px;
       overflow:hidden;
-      background:white;
+      background: rgba(255,255,255,0.65);
+      backdrop-filter: blur(6px);
       box-shadow:0 4px 15px rgba(0,0,0,0.08);
       transition:transform 0.3s;
     " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
@@ -70,7 +72,8 @@ title: Home
       scroll-snap-align:start;
       border-radius:16px;
       overflow:hidden;
-      background:white;
+      background: rgba(255,255,255,0.65);
+      backdrop-filter: blur(6px);
       box-shadow:0 4px 15px rgba(0,0,0,0.08);
       transition:transform 0.3s;
     " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
@@ -86,7 +89,8 @@ title: Home
       scroll-snap-align:start;
       border-radius:16px;
       overflow:hidden;
-      background:white;
+      background: rgba(255,255,255,0.65);
+      backdrop-filter: blur(6px);
       box-shadow:0 4px 15px rgba(0,0,0,0.08);
       transition:transform 0.3s;
     " onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
@@ -103,14 +107,18 @@ title: Home
   <div style="margin-top:2rem;">
     <a href="https://formspree.io/f/mldopkjb" style="
       text-decoration:none;
-      background-color:#3367D6;
-      color:white;
-      padding:0.9rem 2rem;
-      border-radius:10px;
-      font-weight:600;
-      font-size:1rem;
-      transition:0.3s;
-    " onmouseover="this.style.background='#244eb0'" onmouseout="this.style.background='#3367D6'">Get Your Quote</a>
+    background: linear-gradient(135deg, #2e503d, #5b8c63);
+    color: #f9f9f7;
+    padding: 0.9rem 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 6px 16px rgba(46,80,61,0.25);
+    transition: all 0.3s ease;
+  " onmouseover="this.style.background='linear-gradient(135deg,#3f6b4e,#6fa47b)'"
+    onmouseout="this.style.background='linear-gradient(135deg,#2e503d,#5b8c63)'">
+    Get Your Quote
+    </a>
   </div>
 </section>
 
@@ -122,8 +130,11 @@ title: Home
         el.style.opacity = 1;
         el.style.transform = 'translateY(0)';
       }
-    });
+    });  
   });
 </script>
+
+
+
   
 
