@@ -43,7 +43,7 @@ title: Home
     </div>
 
     <!-- Card 2 -->
-    <div class="card" data-pdf="{{ '/design/portfolio-sample.pdf' | relative_url }}">
+    <div class="card" data-pdf="{{ '/design/cvsample2.pdf' | relative_url }}">
       <img src="/images/portfolio1.jpg" alt="Website Design">
       <div class="card-content">
         <h3>Website Portfolio</h3>
@@ -52,7 +52,7 @@ title: Home
     </div>
 
     <!-- Card 3 -->
-    <div class="card" data-pdf="{{ '/design/cv-creative.pdf' | relative_url }}">
+    <div class="card" data-pdf="{{ '/design/cvsample3.pdf' | relative_url }}">
       <img src="/images/resume2.jpg" alt="Creative Resume">
       <div class="card-content">
         <h3>Creative CV</h3>
@@ -72,7 +72,6 @@ title: Home
   const pdfFrame = document.getElementById('pdfFrame');
   const downloadLink = document.getElementById('downloadLink');
 
-  //
   document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('click', () => {
       const pdfPath = card.getAttribute('data-pdf');
