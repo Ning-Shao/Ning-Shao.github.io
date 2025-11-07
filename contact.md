@@ -7,9 +7,9 @@ title: Contact
 
 # Contact
 
-Email: ningshao199981@outlook.com  
-GitHub: [Ning-Shao](https://github.com/Ning-Shao)  
-Linkedin: [Ning Shao](www.linkedin.com/in/ning-shao)
+**Email:** ningshao199981@outlook.com  
+**GitHub:** [Ning-Shao](https://github.com/Ning-Shao)  
+**LinkedIn:** <a href="https://www.linkedin.com/in/ning-shao" target="_blank" rel="noopener noreferrer">LinkedIn: Ning Shao</a>
 
 <hr>
 
