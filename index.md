@@ -43,7 +43,7 @@ title: Home
 
     <!-- Card 2 -->
     <div class="card" data-pdf="{{ '/design/cvsample2.pdf' | relative_url }}">
-      <img src="/design/cvsample2.jpg" alt="Website Design">
+      <img src="/design/cvsample2.jpg" alt="Academic Resume">
       <div class="card-content">
         <h3>Academic Resume</h3>
       </div>
@@ -56,6 +56,14 @@ title: Home
         <h3>Academic CV</h3>
       </div>
     </div>
+    
+   <!-- Card 4 -->
+    <div class="card" data-pdf="{{ '/design/cvsample4.pdf' | relative_url }}">
+      <img src="/design/cvsample2.jpg" alt="Website Design">
+      <div class="card-content">
+        <h3>Academic Resume</h3>
+      </div>
+    </div>  
   </div>
 
   <div style="margin-top:2rem;">
