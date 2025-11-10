@@ -38,7 +38,6 @@ title: Home
       <img src="/design/cvsample1.jpg" alt="Modern Minimal CV">
       <div class="card-content">
         <h3>Modern Minimal CV</h3>
-        <p>A professional LaTeX-designed resume sample.</p>
       </div>
     </div>
 
@@ -46,8 +45,7 @@ title: Home
     <div class="card" data-pdf="{{ '/design/cvsample2.pdf' | relative_url }}">
       <img src="/design/cvsample2.jpg" alt="Website Design">
       <div class="card-content">
-        <h3>Website Portfolio</h3>
-        <p>Showcase of personal website designs.</p>
+        <h3>Academic Resume</h3>
       </div>
     </div>
 
@@ -56,7 +54,6 @@ title: Home
       <img src="/design/cvsample3.jpg" alt="Academic Resume">
       <div class="card-content">
         <h3>Academic CV</h3>
-        <p>A professional CV for academic positions written in LaTeX.</p>
       </div>
     </div>
   </div>
