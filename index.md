@@ -26,49 +26,32 @@ As an AI Product Builder, I build AI-powered tools to improve learning and decis
 </div>
 
 <section id="studio" class="fade-in">
-  <h2>Jojo's Design Studio</h2>
+  <h2>Google Store User Data Dashboard</h2>
   <p>
-    Descriptions.<br>
-    More descriptions.
+问题：
+比较谷歌商店的应用
+<br>
+解决方案：
+构建可视化dashboard，提供交互式数据分析
+<br>
+我的贡献：
+- 使用AI辅助开发
+- 设计交互逻辑
+- 优化信息结构
+<br>
+结果：
+提升数据理解效率
   </p>
 
   <div class="card-container">
     <!-- Card 1 -->
-    <div class="card" data-pdf="{{ '/design/cvsample1.pdf' | relative_url }}">
-      <img src="/design/cvsample1.jpg" alt="Modern Minimal CV">
+    <div class="card" data-pdf="{{ '/projects/streamlit_app.py' | relative_url }}">
+      <img src="/project/google_user_data_dashboard.jpg" alt="Google Store User Data Dashboard">
       <div class="card-content">
-        <h3>Modern Minimal CV</h3>
+        <h3>Google Store User Data Dashboard</h3>
       </div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="card" data-pdf="{{ '/design/cvsample2.pdf' | relative_url }}">
-      <img src="/design/cvsample2.jpg" alt="Academic Resume">
-      <div class="card-content">
-        <h3>Academic Resume</h3>
-      </div>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card" data-pdf="{{ '/design/cvsample3.pdf' | relative_url }}">
-      <img src="/design/cvsample3.jpg" alt="Academic Resume">
-      <div class="card-content">
-        <h3>Academic CV</h3>
-      </div>
-    </div>
-    
-   <!-- Card 4 -->
-    <div class="card" data-pdf="{{ '/design/cvsample4.pdf' | relative_url }}">
-      <img src="/design/cvsample2.jpg" alt="Website Design">
-      <div class="card-content">
-        <h3>Academic Resume</h3>
-      </div>
-    </div>  
-  </div>
-
-  <div style="margin-top:2rem;">
-    <a href="/contact" class="btn-green">Get Your Quote</a>
-  </div>
 </section>
 
 <script>
