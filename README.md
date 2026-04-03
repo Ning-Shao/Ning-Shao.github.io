@@ -1,2 +1,2 @@
 # Ning-Shao.github.io
-Ning's personal website. 
+AI Product Builder | User-Oriented Thinker
