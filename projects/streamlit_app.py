@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 st.set_page_config(
-    page_title="Google Store User Data Dashboard",
+    page_title="Google Store App User Data Dashboard",
     layout="centered",
     initial_sidebar_state="collapsed"
 )
