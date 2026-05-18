@@ -10,9 +10,9 @@ title: Home
   <a href="/contact">Contact</a>
 </nav>
 
-# Welcome to Ning's personal website. 
+# Ning Shao
 <div class="soft-intro">
-As an AI Product Builder, I build AI-powered tools to improve learning and decision-making efficiency. As a philosopher turned technologist, I explore the ethics of artificial intelligence and design technologies grounded in humanity.
+AI Product Builder focused on education, design technology, and human-centered AI tools.
 
 </div>
 
@@ -46,11 +46,12 @@ As an AI Product Builder, I build AI-powered tools to improve learning and decis
   <div class="card-container">
     <!-- Card 1 -->
     <div class="card" data-pdf="{{ '/projects/streamlit_app.py' | relative_url }}">
-      <img src="/project/google_user_data_dashboard.jpg" alt="Google Store User Data Dashboard">
+      <img src="{{ '/assets/images/data_analysis.jpg' | relative_url }}" alt="Google Store User Data Dashboard">
       <div class="card-content">
         <h3>Google Store User Data Dashboard</h3>
       </div>
     </div>
+  </div>
 
 </section>
 
