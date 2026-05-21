@@ -9,7 +9,10 @@
   <body>
     <header>
       <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
+      <p>
+        <span class="lang-en">{{ site.description }}</span>
+        <span class="lang-zh">专注于教育、设计科技与以人为本 AI 工具的 AI 产品构建者。</span>
+      </p>
     </header>
 
     <main>
@@ -19,5 +22,30 @@
     <footer>
       <p>© 2025 Ning Shao | Designed with love </p>
     </footer>
+    <script>
+      (function () {
+        const languageButtons = document.querySelectorAll('[data-set-lang]');
+        const savedLanguage = localStorage.getItem('portfolioLanguage') || 'en';
+
+        function setPortfolioLanguage(language) {
+          document.body.classList.toggle('show-zh', language === 'zh');
+          document.documentElement.lang = language === 'zh' ? 'zh-CN' : 'en';
+
+          languageButtons.forEach(button => {
+            const isActive = button.dataset.setLang === language;
+            button.classList.toggle('is-active', isActive);
+            button.setAttribute('aria-pressed', String(isActive));
+          });
+
+          localStorage.setItem('portfolioLanguage', language);
+        }
+
+        languageButtons.forEach(button => {
+          button.addEventListener('click', () => setPortfolioLanguage(button.dataset.setLang));
+        });
+
+        setPortfolioLanguage(savedLanguage);
+      })();
+    </script>
   </body>
 </html>
